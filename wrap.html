@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul , li {
+				list-style: none;
+			}
+			ul{
+				width: 500px;
+				height: 300px;
+				border: 2px #F37900 solid;	
+			}
+			li{
+				width: 80px;
+				height: 50px;
+				background: red;
+				border: 2px #fff solid;
+			}
+			ul:nth-child(1){
+				display: flex;
+				/* 超出不换行 */
+				flex-wrap: nowrap;
+			}
+			ul:nth-child(2){
+				display: flex;
+				/* 超出换行 */
+				flex-wrap: wrap;
+			}
+			ul:nth-child(3){
+				display: flex;
+				/* 超出后，反向换行 */
+				flex-wrap: wrap-reverse;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+		</ul>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+		</ul>
+		
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+		</ul>
+		
+	</body>
+</html>
